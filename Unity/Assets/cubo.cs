@@ -4,22 +4,12 @@ using UnityEngine;
 
 public class cubo : MonoBehaviour
 {
-    public Vector3 posicionFinal = new Vector3 (5,0,0); 
-    public float speed = 5;
+    public Vector3 ejex = new Vector3(5,0);
 
     void Update()
     {
-        /*if (transform.position.x <= posicionFinal.x )
-        {
-            transform.Translate(movimiento * Time.deltaTime * speed);
+        transform.Translate(ejex * Time.deltaTime);
 
-        }*/
-
-        /*Comparar la position actual del cubo con la posicion final a la que quieres llegar
-         * Si ha llegado, cambiar de direccion
-         * Si no ha llegado, moverse hacia esa dieccion
-         * 
-         * 
 
     }
 }
