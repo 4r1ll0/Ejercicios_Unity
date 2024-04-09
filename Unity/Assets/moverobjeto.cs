@@ -4,13 +4,34 @@ using UnityEngine;
 
 public class moverobjeto : MonoBehaviour
 {
-    
-    void Start()
+
+    public Vector2 mov = new Vector2 (5,0);
+    public Vector2 movDos = new Vector2(-5, 0);
+
+    public bool movPrincipal = true;
+
+    void Update()
     {
 
-        //transform.localScale = new Vector2(5, 10);
-        transform.localRotation = Quaternion.Euler (-70, 50, 90);
+        if (movPrincipal == true)
+        {
+           
+           transform.Translate(mov * Time.deltaTime);
+            if (mov.x > 5)
+            {
+                transform.Translate(movDos * Time.deltaTime);
+            }
+            if (mov.x < -5)
+            {
+                transform.Translate(mov * Time.deltaTime);
+            }
 
+        }
+        else if (movPrincipal == false)
+        {
+
+            transform.Translate(movDos * Time.deltaTime);
+        }
     }
 }
 

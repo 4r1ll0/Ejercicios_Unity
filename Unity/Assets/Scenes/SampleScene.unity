@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 2103971445}
   - component: {fileID: 2103971444}
   - component: {fileID: 2103971443}
+  - component: {fileID: 2103971446}
   m_Layer: 0
   m_Name: cubo
   m_TagString: Untagged
@@ -240,11 +241,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103971442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfec60e5780eaaa4498f2aec2e9f4e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mov: {x: 5, y: 0}
+  movDos: {x: -5, y: 0}
+  movPrincipal: 1
 --- !u!212 &2103971444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -306,12 +310,24 @@ Transform:
   m_GameObject: {fileID: 2103971442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0037875772, y: -1.2901, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2103971446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103971442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4d97e4dcba6b140bfff9e403656dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
