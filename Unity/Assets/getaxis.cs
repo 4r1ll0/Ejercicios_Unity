@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class getaxis : MonoBehaviour
 {
-    Vector2 movX = new Vector2(5, 0);
-    Vector2 movY = new Vector2(0, 5);
+    
+  
+    float speed = 10f;
+    Rigidbody2D rb;
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
-        float movX = Input.GetAxis("Horizontal");
-        float movY = Input.GetAxis("Vertical");
+        float movX = Input.GetAxis("Horizontal") * speed;
+        float movY = Input.GetAxis("Vertical") * speed;
+        rb.velocity = new Vector2(movX, movY);
+        Debug.Log("se  mueve" + movX);
+
 
     }
 }
