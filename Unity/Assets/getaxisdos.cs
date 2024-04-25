@@ -5,14 +5,6 @@ using UnityEngine;
 public class getaxisdos : MonoBehaviour
 {
 
-
-    void Start()
-    {
-
-
-    }
-
-
     void Update()
     {
        /* bool seAgranda = Input.GetButtonDown("Jump");
