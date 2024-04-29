@@ -34,7 +34,9 @@ public class rb : MonoBehaviour
             rib.gravityScale = (mov);
 
         }
+        
     }
+    
 
 
 }
