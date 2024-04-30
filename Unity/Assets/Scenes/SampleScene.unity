@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e13098d55c54946a7bdc7b95421fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 100
 --- !u!50 &221520522
 Rigidbody2D:
   serializedVersion: 4
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 909911850}
   m_Layer: 0
   m_Name: 9-Sliced (4)
-  m_TagString: bloque1
+  m_TagString: bloque4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 1075844565}
   m_Layer: 0
   m_Name: 9-Sliced (3)
-  m_TagString: bloque1
+  m_TagString: bloque3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -891,7 +891,7 @@ Transform:
   m_GameObject: {fileID: 1541546687}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.82, y: -4.32, z: 0}
+  m_LocalPosition: {x: -5.61, y: -4.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1069,6 +1069,7 @@ GameObject:
   - component: {fileID: 2103971448}
   - component: {fileID: 2103971449}
   - component: {fileID: 2103971450}
+  - component: {fileID: 2103971451}
   m_Layer: 0
   m_Name: cubo
   m_TagString: Player
@@ -1152,7 +1153,7 @@ Transform:
   m_GameObject: {fileID: 2103971442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalPosition: {x: -5.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1254,6 +1255,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.2305679}
   m_EdgeRadius: 0
+--- !u!114 &2103971451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103971442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2ecbdaf31712648b5489f17a80dd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
