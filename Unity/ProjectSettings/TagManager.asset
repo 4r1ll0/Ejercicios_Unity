@@ -8,6 +8,7 @@ TagManager:
   - bloque2
   - bloque3
   - bloque4
+  - barro
   layers:
   - Default
   - TransparentFX
