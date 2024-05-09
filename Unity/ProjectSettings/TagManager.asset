@@ -9,6 +9,7 @@ TagManager:
   - bloque3
   - bloque4
   - barro
+  - trampolin
   layers:
   - Default
   - TransparentFX
